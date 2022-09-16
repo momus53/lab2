@@ -1,5 +1,5 @@
 class Victim < ApplicationRecord
-    validates :title, presence: true
+    validates :name, presence: true
 
     def edad
         return Date.today.year - birthdate.year
