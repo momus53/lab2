@@ -1,4 +1,6 @@
 class Victim < ApplicationRecord
+    has_many  :attacks
+
     validates :name, presence: true
 
     def edad
