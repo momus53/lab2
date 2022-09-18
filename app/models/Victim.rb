@@ -1,5 +1,5 @@
 class Victim < ApplicationRecord
-    has_many  :attacks
+    has_many  :attacks , dependent: :destroy
 
     validates :name, presence: true
 
