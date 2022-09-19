@@ -1,7 +1,7 @@
 class CreateTweet < ActiveRecord::Migration[7.0]
   def change
     create_table :tweets do |t|
-      t.string :monster
+      t.bigint :monster_id
       t.text :tweet_content
 
       t.timestamps

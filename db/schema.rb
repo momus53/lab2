@@ -32,11 +32,18 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_19_194547) do
   end
 
   create_table "tweets", force: :cascade do |t|
-    t.string "monster"
+    t.bigint "monster_id"
     t.text "tweet_content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+#  create_table "tweetss", force: :cascade do |t|
+#    t.string "monster"
+#    t.string "tweet_content"
+#    t.datetime "created_at", null: false
+#    t.datetime "updated_at", null: false
+#  end
 
   create_table "victims", force: :cascade do |t|
     t.string "name"
