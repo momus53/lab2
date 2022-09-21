@@ -1,6 +1,6 @@
 class Victim < ApplicationRecord
     has_many  :attacks , dependent: :destroy
-
+    has_many  :monster , through: :attacks
     validates :name, presence: true
 
     def edad
