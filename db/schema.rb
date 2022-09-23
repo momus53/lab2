@@ -27,6 +27,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_19_194547) do
     t.string "name"
     t.text "description"
     t.integer "scare_level"
+    t.boolean "private_account"
+    t.date "birthdate"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -34,13 +36,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_19_194547) do
   create_table "tweets", force: :cascade do |t|
     t.bigint "monster_id"
     t.text "tweet_content"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "tweetss", force: :cascade do |t|
-    t.string "monster"
-    t.string "tweet_content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

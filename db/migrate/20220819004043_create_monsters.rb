@@ -5,8 +5,8 @@ class CreateMonsters < ActiveRecord::Migration[7.0]
       t.string :name
       t.text :description
       t.integer :scare_level
-      t.string :private_account
-      t.Date :birthdate
+      t.boolean :private_account
+      t.date :birthdate
 
       t.timestamps
     end
